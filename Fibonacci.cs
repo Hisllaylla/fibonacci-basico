@@ -16,6 +16,6 @@ public class Fibonacci
             NumeroDois = NumeroUm;
             NumeroUm = Soma;
         }
-        return Sequencia; // retorna array contendo a sequência
+        return Sequencia; // retorna array contendo a sequência escolhida (21)
     }
 }
