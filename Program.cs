@@ -1,15 +1,12 @@
-﻿using System;
+﻿namespace Fibonacci;
 
-namespace FibonacciBasico
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            Fibonacci SequenciaFibonacci = new Fibonacci();
-            int[] SF = SequenciaFibonacci.CalcularFibonacci();
+        Fibonacci fibonacci = new Fibonacci(); // Crie uma instância da classe Fibonacci
+        int[] SF = fibonacci.CalcularFibonacci(); // Chame o método para calcular a sequência
 
-            Console.WriteLine("A sequência de Fibonacci é: " + string.Join(", ", SF));
-        }
+        Console.WriteLine("A sequência de Fibonacci é: " + string.Join(", ", SF));
     }
-}
+};
